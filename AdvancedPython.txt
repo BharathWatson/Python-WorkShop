@@ -1,0 +1,84 @@
+1] Regular Expressions -
+--------------------------
+in computing,a regular expression,also referred to as 'regex' or 'regexp',provides a concise and flexible means for matching
+strings of text,such as particular characters,words,or patterns of characters.
+a regular expression is written in a formal language that can be interpreted by a regular expression processor.
+
+methods used : -
+compile()
+copyreg()
+enum()
+error()
+escape()
+findall()
+finditer()
+fullmatch()
+functools()
+match()
+purge()
+search()
+split()
+sre_compile()
+sre_parse()
+sub()
+subn()
+template()
+
+regular expressions guide : https://slideplayer.com/slide/7971471/
+
+regex quick guide :-
+
+^ Matches the beginning of a line
+$ Matches the end of the line
+. Matches any character
+\s Matches whitespace
+\S Matches any non-whitespace character
+* Repeats a character zero or more times
+*? Repeats a character zero or more times
+   (non-greedy)
++  Repeats a character one or more times
++? Repeats a character one or more times
+   (non-greedy)
+[aeiou] Matches a single character in the listed set
+[^XYZ] Matches a single character not in the listed set
+[a-z0-9] The set of characters can include a range
+( Indicates where string extraction is to start
+) Indicates where string extraction is to end
+
+2]Networks And Sockets : - 
+--------------------------------
+what is socket ?
+ a socket is an interface for an application to a hosts network stack(part of OS)
+ 
+ after connecting,an application is able ot bidirectionally exchange data with other processes on the same
+ or another host.
+
+server side methods in python - 
+    socket() - create a new communication end point
+    bind() - attach a local address to a Sockets
+    listen() - announce willingness to accept connections;give queue size
+    accept() - block the caller until a connection attempt arrives
+    send()/recv() - send some data over the connection/recieve some data from the connection
+
+client side methods in python - 
+    socket() - create a new communication end point
+    connect() - actively attempt to establish a connection
+    send()/recv() - send some data over the connection/recieve some data from the connection.
+
+3] Extensible Markup Language (XML) :
+----------------------------------------------
+
+ 4] JSON - Java Script Object Notation
+   * it will store minimum data and transfers it into any type of formats.
+   * similar to XML
+   * it is an in built module
+   * methods in JSON : -
+   load(),loads(),dump(),dumps()
+   load() - load the data
+   loads() - load the data as string
+   dump() - dump data into other file
+   dumps() - dump data as string into other file
+   True,False in json are starts with small chars(true,false)
+
+5]Common Gateway Interface:
+    to run the program ---> python -m http.server --cgi

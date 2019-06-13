@@ -1,0 +1,268 @@
+Python 3.7.1 (v3.7.1:260ec2c36a, Oct 20 2018, 14:05:16) [MSC v.1915 32 bit (Intel)] on win32
+Type "help", "copyright", "credits" or "license()" for more information.
+>>> dict1={1:"one",2:"two",3:"three"}
+>>> type(dict1)
+<class 'dict'>
+>>> for i in dir(dict):
+	print(i)
+
+	
+__class__
+__contains__
+__delattr__
+__delitem__
+__dir__
+__doc__
+__eq__
+__format__
+__ge__
+__getattribute__
+__getitem__
+__gt__
+__hash__
+__init__
+__init_subclass__
+__iter__
+__le__
+__len__
+__lt__
+__ne__
+__new__
+__reduce__
+__reduce_ex__
+__repr__
+__setattr__
+__setitem__
+__sizeof__
+__str__
+__subclasshook__
+clear
+copy
+fromkeys
+get
+items
+keys
+pop
+popitem
+setdefault
+update
+values
+>>> dict1
+{1: 'one', 2: 'two', 3: 'three'}
+>>> d[1]='ion'
+Traceback (most recent call last):
+  File "<pyshell#6>", line 1, in <module>
+    d[1]='ion'
+NameError: name 'd' is not defined
+>>> dict1[1]='ion'
+>>> dict1
+{1: 'ion', 2: 'two', 3: 'three'}
+>>> dict1[7]='ion'
+>>> dict1
+{1: 'ion', 2: 'two', 3: 'three', 7: 'ion'}
+>>> dict1.pop()
+Traceback (most recent call last):
+  File "<pyshell#11>", line 1, in <module>
+    dict1.pop()
+TypeError: pop expected at least 1 arguments, got 0
+>>> dict1.pop(7)
+'ion'
+>>> dict1
+{1: 'ion', 2: 'two', 3: 'three'}
+>>> dict1.clear()
+>>> dict1
+{}
+>>> dict1={1:'ion',2:'atom',3:'neon'}
+>>> dict2
+Traceback (most recent call last):
+  File "<pyshell#17>", line 1, in <module>
+    dict2
+NameError: name 'dict2' is not defined
+>>> dict2={}
+>>> dict2=dict1.copy()
+>>> dict2
+{1: 'ion', 2: 'atom', 3: 'neon'}
+>>> dict2.items()
+dict_items([(1, 'ion'), (2, 'atom'), (3, 'neon')])
+>>> type(dict_items)
+Traceback (most recent call last):
+  File "<pyshell#22>", line 1, in <module>
+    type(dict_items)
+NameError: name 'dict_items' is not defined
+>>> type(dict.dict_items)
+Traceback (most recent call last):
+  File "<pyshell#23>", line 1, in <module>
+    type(dict.dict_items)
+AttributeError: type object 'dict' has no attribute 'dict_items'
+>>> type(dict.items())
+Traceback (most recent call last):
+  File "<pyshell#24>", line 1, in <module>
+    type(dict.items())
+TypeError: descriptor 'items' of 'dict' object needs an argument
+>>> dict1
+{1: 'ion', 2: 'atom', 3: 'neon'}
+>>> dict2
+{1: 'ion', 2: 'atom', 3: 'neon'}
+>>> dict1.keys()
+dict_keys([1, 2, 3])
+>>> type(dict1.keys)
+<class 'builtin_function_or_method'>
+>>> type(dict1.keys())
+<class 'dict_keys'>
+>>> dict2.setdefault(1,'orgon')
+'ion'
+>>> dict2
+{1: 'ion', 2: 'atom', 3: 'neon'}
+>>> help(dict.setdefault)
+Help on method_descriptor:
+
+setdefault(self, key, default=None, /)
+    Insert key with a value of default if key is not in the dictionary.
+    
+    Return the value for key if key is in the dictionary, else default.
+
+>>> dict1.update([1,2,3],['H','He','Ar'])
+Traceback (most recent call last):
+  File "<pyshell#33>", line 1, in <module>
+    dict1.update([1,2,3],['H','He','Ar'])
+TypeError: update expected at most 1 arguments, got 2
+>>> d={1:'ion',2:'neon',3:'He'}
+>>> help(dict.update)
+Help on method_descriptor:
+
+update(...)
+    D.update([E, ]**F) -> None.  Update D from dict/iterable E and F.
+    If E is present and has a .keys() method, then does:  for k in E: D[k] = E[k]
+    If E is present and lacks a .keys() method, then does:  for k, v in E: D[k] = v
+    In either case, this is followed by: for k in F:  D[k] = F[k]
+
+>>> d.update(dict1)
+>>> d
+{1: 'ion', 2: 'atom', 3: 'neon'}
+>>> dict1
+{1: 'ion', 2: 'atom', 3: 'neon'}
+>>> dict2
+{1: 'ion', 2: 'atom', 3: 'neon'}
+>>> d2=dict1
+>>> d2=dict2
+>>> del dict1
+>>> del dict2
+>>> d1
+Traceback (most recent call last):
+  File "<pyshell#44>", line 1, in <module>
+    d1
+NameError: name 'd1' is not defined
+>>> d2
+{1: 'ion', 2: 'atom', 3: 'neon'}
+>>> d2
+{1: 'ion', 2: 'atom', 3: 'neon'}
+>>> dict2
+Traceback (most recent call last):
+  File "<pyshell#47>", line 1, in <module>
+    dict2
+NameError: name 'dict2' is not defined
+>>> del dict2
+Traceback (most recent call last):
+  File "<pyshell#48>", line 1, in <module>
+    del dict2
+NameError: name 'dict2' is not defined
+>>> d1
+Traceback (most recent call last):
+  File "<pyshell#49>", line 1, in <module>
+    d1
+NameError: name 'd1' is not defined
+>>> d1=d2
+>>> d1
+{1: 'ion', 2: 'atom', 3: 'neon'}
+>>> d3={'one','two','three','four'}
+>>> s=dict.fromkeys(d3)
+>>> s
+{'three': None, 'two': None, 'four': None, 'one': None}
+>>> help(dict.fromkeys)
+Help on built-in function fromkeys:
+
+fromkeys(iterable, value=None, /) method of builtins.type instance
+    Create a new dictionary with keys from iterable and values set to value.
+
+>>> s=dict.fromkeys(d3,36)
+>>> s
+{'three': 36, 'two': 36, 'four': 36, 'one': 36}
+>>> type(d3)
+<class 'set'>
+>>> help(dict.update)
+Help on method_descriptor:
+
+update(...)
+    D.update([E, ]**F) -> None.  Update D from dict/iterable E and F.
+    If E is present and has a .keys() method, then does:  for k in E: D[k] = E[k]
+    If E is present and lacks a .keys() method, then does:  for k, v in E: D[k] = v
+    In either case, this is followed by: for k in F:  D[k] = F[k]
+
+>>> d7={P}
+Traceback (most recent call last):
+  File "<pyshell#60>", line 1, in <module>
+    d7={P}
+NameError: name 'P' is not defined
+>>> d7={}
+>>> type(d7)
+<class 'dict'>
+>>> d={};
+>>> d
+{}
+>>> d={};s=[];d=0
+>>> d
+0
+>>> s
+[]
+>>> help(zip)
+Help on class zip in module builtins:
+
+class zip(object)
+ |  zip(iter1 [,iter2 [...]]) --> zip object
+ |  
+ |  Return a zip object whose .__next__() method returns a tuple where
+ |  the i-th element comes from the i-th iterable argument.  The .__next__()
+ |  method continues until the shortest iterable in the argument sequence
+ |  is exhausted and then it raises StopIteration.
+ |  
+ |  Methods defined here:
+ |  
+ |  __getattribute__(self, name, /)
+ |      Return getattr(self, name).
+ |  
+ |  __iter__(self, /)
+ |      Implement iter(self).
+ |  
+ |  __next__(self, /)
+ |      Implement next(self).
+ |  
+ |  __reduce__(...)
+ |      Return state information for pickling.
+ |  
+ |  ----------------------------------------------------------------------
+ |  Static methods defined here:
+ |  
+ |  __new__(*args, **kwargs) from builtins.type
+ |      Create and return a new object.  See help(type) for accurate signature.
+
+>>> help(write)
+Traceback (most recent call last):
+  File "<pyshell#69>", line 1, in <module>
+    help(write)
+NameError: name 'write' is not defined
+>>> help(write())
+Traceback (most recent call last):
+  File "<pyshell#70>", line 1, in <module>
+    help(write())
+NameError: name 'write' is not defined
+>>> append()
+Traceback (most recent call last):
+  File "<pyshell#71>", line 1, in <module>
+    append()
+NameError: name 'append' is not defined
+>>> help(append())
+Traceback (most recent call last):
+  File "<pyshell#72>", line 1, in <module>
+    help(append())
+NameError: name 'append' is not defined
+>>> 

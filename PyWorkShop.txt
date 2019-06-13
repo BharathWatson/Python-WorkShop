@@ -1,0 +1,312 @@
+#include<stdio.h>
+int main()
+{
+ printf("hello world\n");
+}
+
+- python is a powerful high level,object oriented programming language created by guido van rossum,relesed in 1991
+- python is a scripting language
+- simple easy-to-use syntax
+who uses python ?
+a] youtube,google,Yahoo,dropbox,respberry pi,bit torrent,used in NASA,NetFlix,NSA
+
+- zope corp,shopzilla...etc uses python scripting.
+Featues of python : -
+  - simple and easy to use,open source
+  - high level language
+  - portable
+  - extention .py
+  - platforn independent
+  - supports different programming paradigms
+  - extensible -> c/c++/java/.net codes can be converted to python code
+download python 3.7.2 at www.python.org
+ after install set environment variable
+ computer-properties-advanced system settings-environment variables-path
+-->to check python is working open cmd and type
+   cmd:\>python --version || cmd:\>python
+
+session 2:-
+  
+- python is an interpreted -->line by line execution.
+***keywords***
+def  :  reserved words in a language.
+keywords cannot be used as file names and variable names.
+
+total keywords in python 3.7.2 are - 
+
+False,
+None,
+True,
+and,
+as,
+assert,
+async,
+await,
+break,
+class,
+continue,
+def,
+del,
+elif,
+else,
+except,
+finally,
+for,
+from,
+global,
+if,
+import,
+in,
+is,
+lambda,
+nonlocal,
+not,
+or,
+pass,
+raise,
+return,
+try,
+while,
+with,
+yield.
+
+variable - name given to a reserved memory location in the memory.
+
+Py notes _____________:-
+>>> a="bharath"
+>>> a
+'bharath'
+>>> b=36
+>>> c=5.5
+>>> a
+'bharath'
+>>> b
+36
+>>> c
+5.5
+
+>>> print(a,b,c)
+bharath 36 5.5
+>>> 
+
+operators : -
+
+1-arithmatic operators (+,-,*,/,**,%,//)
+2-assignment operators (/=,%=,//=,**=,)
+3-comparision operators (>,<,==,!=,)
+4-logical operators (and,or,not)
+5-bitwise operators (|,&,^,>>,<<)
+6-identity operators (is,is not,in,not in)
+7-membership operators ()
+
+expressions - expression is a combination of values,variables and operators.
+
+--> python follows pedmas rule.(p-parenthesis,e-exponential).
+
+-->python literals
+        -->literal can be defined as the data stored in vars.
+     	1-string literals -> 1-single line string , 2- multiline string.
+	2-numeric literals  int,float,double.
+	3-boolean literals  True,False.
+	4-special literal - None.
+
+loops in python : -
+
+for:
+ syntax:
+	for variable in sequence:
+		statements
+	else:
+		statements
+while:
+ syntax:
+	while test_expression:
+		body of while
+break,continue are jumping statements...................
+
+_____________________________:FUNCTIONS :__________________________________________
+
+def : group of related statements that perform a specific task is called a function
+advantages : 
+1]code reduction,reusable.
+types of functions:-------1]predefined 2]user defined
+1]python interpreter has no.of functions that are always available to use.
+	eg:print(),input()
+2]functions defined by us to do certain specific task are called user defined.
+	eg:
+		def funcname(parameters):
+			#body of function
+_____________________________built-in functions____________________________________
+abs()
+all()
+any()
+ascii()
+bin()
+bool()
+bytearray()
+bytes()
+min()
+max()
+len()
+round()
+sum()
+sorted()
+help()
+
+	eg:
+		def funname():
+			print("hello")
+
+
+______________________________Strings_____________________________________________
+def : sequence of characters.
+
+types : 1]single line strings  2] multiline strings
+how to declare a string ?
+---> using '',"",""" """.
+--indexing - 1]forward indexing - 0,1,2,3,4,5,..,n-1 2]backward indexing. - -1,-2,-3,...,-n
+
+string methods:
+capitalize()
+casefold()
+center()
+count()
+encode()
+endswith()
+expa()ndtabs()
+find()
+format()
+format_m()ap
+index()
+isalnum()
+isalpha()
+isascii()
+isdecimal()
+isdigit()
+isidentifier()
+islower()
+isnumeric()
+isprintable()
+isspace()
+istitle()
+isupper()
+join()
+ljust()
+lower()
+lstrip()
+maketrans()
+partition()
+replace()
+rfind()
+rindex()
+rjust()
+rpartition()
+rsplit()
+rstrip()
+split()
+splitlines()
+startswith()
+strip()
+swapcase()
+title()
+translate()
+upper()
+zfill()
+
+_______________________________________LISTS_________________________________________
+def : list is a collection of different data types,lists are mutable.
+    eg:[a,b,c,d,e]
+   + -concatination
+   * -repetition
+
+replace() - args=old value,new value
+
+_________________________________________TUPLES_________________________________________
+
+def : tuple is a just like list sequence of immutable python objects.
+	eg: calender-days or dates cant be added.
+---> represented in (,,,,,)
+
+packing and unpacking : - we place value into a new tuple while in unpacking we extract those values back into variables.
+
+python has tuple assignment feature which enables you to assign more than one variable at a time.
+
+-->methods in tuples - count(),index()
+
+-->enumerate()
+
+
+______________________________Dictionarys___________________________________________
+
+->it is an unordered data collection.
+->defined in {}
+->it is combination of key-value pair called an item of dictionary,
+->keyword of dictionary is 'dict'.
+->to access dict values use keys or get() method.
+->methods in dict class are:
+	clear()
+	copy()
+	fromkeys()
+	get()
+	items()
+	keys()
+	pop()
+	popitem()
+	setdefault()
+	update()
+	values()
+
+-->add item in dict .....
+	eg:dict[key]=value;
+
+-> in dict key is immutable and value id mutable.
+
+_______________________FILES_____________________________________________________
+->open() - two parameters - filename,mode-read,write,append.
+->write() - 	
+->read() - 
+->close() - 		
+
+____MODES_________
+1]W - Write mode
+2]A - Append mode
+3]R - Read mode
+
+___________________________________DATABASE_______________________________________
+
+popular databases: sqllite,postgresql,oracle,sql server,mariaDB,MongoDB.
+=================
+
+download:http://sqlitebrowser.org
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

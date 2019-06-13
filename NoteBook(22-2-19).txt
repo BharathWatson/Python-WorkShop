@@ -1,0 +1,427 @@
+Python 3.7.2 (tags/v3.7.2:9a3ffc0492, Dec 23 2018, 22:20:52) [MSC v.1916 32 bit (Intel)] on win32
+Type "help", "copyright", "credits" or "license()" for more information.
+>>> a=[1,2,3,4,5]
+>>> any(a)
+True
+>>> a1=[]
+>>> any(a1)
+False
+>>> all(a)
+True
+>>> ascii(a)
+'[1, 2, 3, 4, 5]'
+>>> s=ascii(a)
+>>> s[0]
+'['
+>>> s[2]
+','
+>>> type(s)
+<class 'str'>
+>>> type(a)
+<class 'list'>
+>>> bin(24)
+'0b11000'
+>>> bin(100000)
+'0b11000011010100000'
+>>> bool(a)
+True
+>>> bool(a1)
+False
+>>> bytearray(20)
+bytearray(b'\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00')
+>>> bytes(20)
+b'\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00'
+>>> min(a)
+1
+>>> max(a)
+5
+>>> str1=['a','b','c','z','p']
+>>> min(str1)
+'a'
+>>> max(str1)
+'z'
+>>> len9str1)
+SyntaxError: invalid syntax
+>>> len(str1)
+5
+>>> round(2.7)
+3
+\
+>>> round(27.3)
+27
+>>> sum(a)
+15
+>>> sorted(a)
+[1, 2, 3, 4, 5]
+>>> a
+[1, 2, 3, 4, 5]
+>>> sorted(a,True)
+Traceback (most recent call last):
+  File "<pyshell#29>", line 1, in <module>
+    sorted(a,True)
+TypeError: sorted expected 1 arguments, got 2
+>>> 
+=============================== RESTART: Shell ===============================
+>>> 
+
+
+>>> 
+>>> import tim
+Traceback (most recent call last):
+  File "<pyshell#32>", line 1, in <module>
+    import tim
+ModuleNotFoundError: No module named 'tim'
+>>> import time
+>>> dir(time)
+['_STRUCT_TM_ITEMS', '__doc__', '__loader__', '__name__', '__package__', '__spec__', 'altzone', 'asctime', 'clock', 'ctime', 'daylight', 'get_clock_info', 'gmtime', 'localtime', 'mktime', 'monotonic', 'monotonic_ns', 'perf_counter', 'perf_counter_ns', 'process_time', 'process_time_ns', 'sleep', 'strftime', 'strptime', 'struct_time', 'thread_time', 'thread_time_ns', 'time', 'time_ns', 'timezone', 'tzname']
+>>> for i in dir(time):
+	print(i)
+
+	
+_STRUCT_TM_ITEMS
+__doc__
+__loader__
+__name__
+__package__
+__spec__
+altzone
+asctime
+clock
+ctime
+daylight
+get_clock_info
+gmtime
+localtime
+mktime
+monotonic
+monotonic_ns
+perf_counter
+perf_counter_ns
+process_time
+process_time_ns
+sleep
+strftime
+strptime
+struct_time
+thread_time
+thread_time_ns
+time
+time_ns
+timezone
+tzname
+
+>>> s="welcome to rvr"
+>>> s1="welcome"
+>>> s[]
+SyntaxError: invalid syntax
+>>> s[9]
+'o'
+>>> s1[5]
+'m'
+>>> s[3:
+      }
+SyntaxError: invalid syntax
+>>> s[4:]
+'ome to rvr'
+>>> s[8:]
+'to rvr'
+>>> s[:2]
+'we'
+>>> len(s)
+14
+>>> print(s[:11]+"cse)
+	  
+SyntaxError: EOL while scanning string literal
+>>> print(s[:11]+"cse")
+	  
+welcome to cse
+>>> s[::-1}
+	  
+SyntaxError: invalid syntax
+>>> s[::-1]
+	  
+'rvr ot emoclew'
+>>> s+s1
+	  
+'welcome to rvrwelcome'
+>>> s1=" welcome"
+	  
+>>> s+s1
+	  
+'welcome to rvr welcome'
+>>> s*s1
+	  
+Traceback (most recent call last):
+  File "<pyshell#56>", line 1, in <module>
+    s*s1
+TypeError: can't multiply sequence by non-int of type 'str'
+>>> s*2
+	  
+'welcome to rvrwelcome to rvr'
+>>> s1*3
+	  
+' welcome welcome welcome'
+>>> for i in dir(str):
+	  print(i)
+
+	  
+__add__
+__class__
+__contains__
+__delattr__
+__dir__
+__doc__
+__eq__
+__format__
+__ge__
+__getattribute__
+__getitem__
+__getnewargs__
+__gt__
+__hash__
+__init__
+__init_subclass__
+__iter__
+__le__
+__len__
+__lt__
+__mod__
+__mul__
+__ne__
+__new__
+__reduce__
+__reduce_ex__
+__repr__
+__rmod__
+__rmul__
+__setattr__
+__sizeof__
+__str__
+__subclasshook__
+capitalize
+casefold
+center
+count
+encode
+endswith
+expandtabs
+find
+format
+format_map
+index
+isalnum
+isalpha
+isascii
+isdecimal
+isdigit
+isidentifier
+islower
+isnumeric
+isprintable
+isspace
+istitle
+isupper
+join
+ljust
+lower
+lstrip
+maketrans
+partition
+replace
+rfind
+rindex
+rjust
+rpartition
+rsplit
+rstrip
+split
+splitlines
+startswith
+strip
+swapcase
+title
+translate
+upper
+zfill
+>>> s.title()
+	  
+'Welcome To Rvr'
+>>> s.upper()
+	  
+'WELCOME TO RVR'
+>>> s
+	  
+'welcome to rvr'
+>>> s.lower()
+	  
+'welcome to rvr'
+>>> s.index(d)
+	  
+Traceback (most recent call last):
+  File "<pyshell#66>", line 1, in <module>
+    s.index(d)
+NameError: name 'd' is not defined
+>>> s.index('d')
+	  
+Traceback (most recent call last):
+  File "<pyshell#67>", line 1, in <module>
+    s.index('d')
+ValueError: substring not found
+>>> s.index('wel')
+	  
+0
+>>> s.find("WEL")
+	  
+-1
+>>> f="  hello  "
+	  
+>>> f.strip()
+	  
+'hello'
+>>> f.rstrip()
+	  
+'  hello'
+>>> f.lstrip()
+	  
+'hello  '
+>>> f.split()
+	  
+['hello']
+>>> f
+	  
+'  hello  '
+>>> s.split()
+	  
+['welcome', 'to', 'rvr']
+>>> s.coutn()
+	  
+Traceback (most recent call last):
+  File "<pyshell#77>", line 1, in <module>
+    s.coutn()
+AttributeError: 'str' object has no attribute 'coutn'
+>>> s.count()
+	  
+Traceback (most recent call last):
+  File "<pyshell#78>", line 1, in <module>
+    s.count()
+TypeError: count() takes at least 1 argument (0 given)
+>>> s.coutn("wel"0
+	    
+SyntaxError: invalid syntax
+>>> s.coutn("wel")
+	    
+Traceback (most recent call last):
+  File "<pyshell#80>", line 1, in <module>
+    s.coutn("wel")
+AttributeError: 'str' object has no attribute 'coutn'
+>>> s.count("wel")
+	    
+1
+>>>  s.center(14)
+	    
+SyntaxError: unexpected indent
+>>> s.center(14)
+	    
+'welcome to rvr'
+>>> s.center(1000)
+	    
+'                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                             welcome to rvr                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                             '
+>>> s.center(50,"@$")
+	    
+Traceback (most recent call last):
+  File "<pyshell#85>", line 1, in <module>
+    s.center(50,"@$")
+TypeError: The fill character must be exactly one character long
+>>> s.center(50,"@")
+	    
+'@@@@@@@@@@@@@@@@@@welcome to rvr@@@@@@@@@@@@@@@@@@'
+>>> s1.join(s)
+	    
+'w welcomee welcomel welcomec welcomeo welcomem welcomee welcome  welcomet welcomeo welcome  welcomer welcomev welcomer'
+>>> m='''the joker is playing jokes
+and all the audience laughed at him
+at the end it was a nice show'''
+	    
+>>> m
+	    
+'the joker is playing jokes\nand all the audience laughed at him\nat the end it was a nice show'
+>>> print(m)
+	    
+the joker is playing jokes
+and all the audience laughed at him
+at the end it was a nice show
+>>> m.splitlines()
+	    
+['the joker is playing jokes', 'and all the audience laughed at him', 'at the end it was a nice show']
+>>> m.stratswith('m')
+	    
+Traceback (most recent call last):
+  File "<pyshell#94>", line 1, in <module>
+    m.stratswith('m')
+AttributeError: 'str' object has no attribute 'stratswith'
+>>> m.startswith('m')
+	    
+False
+>>> m.startswith('t')
+	    
+True
+>>> m.endswith('n')
+	    
+False
+>>> m.endswith('w')
+	    
+True
+>>> s1.encode()
+	    
+b' welcome'
+>>> e1=s1.encode()
+	    
+>>> e1
+	    
+b' welcome'
+>>> s1
+	    
+' welcome'
+>>> e1.decode()
+	    
+' welcome'
+>>> e1
+	    
+b' welcome'
+>>> a= "abcdef"
+	    
+>>> b="123456"
+	    
+>>> c="bharath"
+	    
+>>> a.isalnum()
+	    
+True
+>>> b.isalnum()
+	    
+True
+>>> c.isalnum()
+	    
+True
+>>> a.isalpha()
+	    
+True
+>>> b.isalpha()
+	    
+False
+>>> c.isalpha()
+	    
+True
+>>> a.isnumeric()
+	    
+False
+>>> b.isnumeric()
+	    
+True
+>>> c.isnumeric()
+	    
+False
+>>> 
+
+
+

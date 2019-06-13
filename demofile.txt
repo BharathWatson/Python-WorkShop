@@ -1,0 +1,9 @@
+hello this data is written by python 
+interpreter and the file is been created by 
+the username BHARATH. good morning
+appending this text to the
+current text data in the document 
+using files in python programming lang.
+bharath	cse	bharath@gmail.com	
+sravan	sravn@gmailc.om	bhbcjhvdcm	
+bharath	cse	bharath@gmail.com	
