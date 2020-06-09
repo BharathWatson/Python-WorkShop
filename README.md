@@ -1,2 +1,2 @@
 # Python-WorkShop
-APSSDC Python WorkShop 2019
+## APSSDC Python Training 2019
